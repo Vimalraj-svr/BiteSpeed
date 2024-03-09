@@ -14,6 +14,9 @@ A Node.js service utilizing Supabase for identifying and managing repeated conta
 
 The service exposes an API endpoint for identifying repeated user contacts. Refer to the API Documentation for details on the available endpoint.
 
+To check the status of the site click [Live Check](https://bitespeed-1xxc.onrender.com/).
+You can access the endpoint here: https://bitespeed-1xxc.onrender.com/identify.
+
 ## API Documentation
 
 POST **/identify**
