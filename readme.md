@@ -20,14 +20,14 @@ POST **/identify**
 Identifies repeated user contacts based on email and phone number.
 
 ## Request
-...json
+```json
 {
   "email": "user@example.com",
   "phoneNumber": "+1234567890"
 }
-
+```
 ## Response
-...json
+```json
 {
   "contact": {
     "primaryContactId": 1,
@@ -36,3 +36,4 @@ Identifies repeated user contacts based on email and phone number.
     "secondaryContactIds": []
   }
 }
+```
