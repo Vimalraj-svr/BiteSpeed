@@ -24,6 +24,17 @@ export default class ContactRoutes implements IRoute {
                         auth: false,
                     }
                 },
+                {
+                    method: 'GET',
+                    path: '/',
+                    options: {
+                        handler: this.controller.liveCheck,
+                        validate: validate.liveCheck,
+                        description: 'Method that checks whether the service is live or not.',
+                        tags: ['api', 'live'],
+                        auth: false,
+                    }
+                },
             ]);
             resolve(true);
         });

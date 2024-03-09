@@ -18,4 +18,14 @@ export default class ContactController {
             return h.response({ error: "Internal Server Error" }).code(500);
         }
     };
+
+    public liveCheck = async (request: Hapi.Request, h: Hapi.ResponseToolkit): Promise<any> => {
+        try {
+            const entities: any = await this.contactResolver.liveCheck(h);
+            return h.response(entities).code(200);
+        } catch (error) {
+            console.error(error);
+            return h.response({ error: "Internal Server Error" }).code(500);
+        }
+    };
 }

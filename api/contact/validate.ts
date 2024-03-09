@@ -6,5 +6,7 @@ export default {
             email: Joi.any().optional(),
             phoneNumber: Joi.any().optional(),
         }),
+    },
+    liveCheck: {
     }
 };

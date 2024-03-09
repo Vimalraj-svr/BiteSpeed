@@ -364,6 +364,11 @@ export default class Repository {
             }
         }
     }
+
+    private liveCheck(h: any): string
+    {
+        return "Site is live 🎉";
+    }
 }
 
 function getAllSecondaryEmails(secondaryData: any, primaryId: number) {
